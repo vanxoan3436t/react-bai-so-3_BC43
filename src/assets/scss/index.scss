@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+:root {
+    --animate-delay: 0.3s;
+}
+.modal {
+    transition: 0.5s;
+
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                font-size: 20px;
+                .detail-img {
+                    width: 50%;
+                }
+
+                .detail-text {
+                    p {
+                        &:nth-child(1) {
+                            font-size: 30px;
+                        }
+                    }
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+    }
+}
+
+.show {
+    display: block;
+    background-color: rgba(53, 51, 51, 0.39);
+}
